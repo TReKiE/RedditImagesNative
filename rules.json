@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "modifyHeaders",
+      "requestHeaders": [
+        {
+          "header": "accept",
+          "operation": "set",
+          "value": "image/avif,image/webp,*/*"
+        }
+      ]
+    },
+    "condition": {
+      "urlFilter": "*://i.redd.it/*",
+      "resourceTypes": ["main_frame"]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": {
+      "type": "modifyHeaders",
+      "requestHeaders": [
+        {
+          "header": "accept",
+          "operation": "set",
+          "value": "image/avif,image/webp,*/*"
+        }
+      ]
+    },
+    "condition": {
+      "urlFilter": "*://preview.redd.it/*",
+      "resourceTypes": ["main_frame"]
+    }
+  }
+]
