@@ -8,7 +8,7 @@
         {
           "header": "accept",
           "operation": "set",
-          "value": "image/avif,image/webp,*/*"
+          "value": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*"
         }
       ]
     },
@@ -26,12 +26,30 @@
         {
           "header": "accept",
           "operation": "set",
-          "value": "image/avif,image/webp,*/*"
+          "value": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*"
         }
       ]
     },
     "condition": {
       "urlFilter": "*://preview.redd.it/*",
+      "resourceTypes": ["main_frame"]
+    }
+  },
+  {
+    "id": 3,
+    "priority": 1,
+    "action": {
+      "type": "modifyHeaders",
+      "requestHeaders": [
+        {
+          "header": "accept",
+          "operation": "set",
+          "value": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*"
+        }
+      ]
+    },
+    "condition": {
+      "urlFilter": "*://external-preview.redd.it/*",
       "resourceTypes": ["main_frame"]
     }
   }

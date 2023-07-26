@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Reddit Images Direct",
-  "short_name": "RedditImgDt",
-  "description": "Loads Reddit images directly by modifying the HTTP Accept header.",
+  "name": "Display Reddit images natively in browser",
+  "short_name": "RedditImgNat",
+  "description": "Displays Reddit image links directly in the browser by modifying the HTTP Accept header.",
   "version": "1.0",
   "icons": {
     "16": "icons/16.png",
@@ -11,13 +11,14 @@
     "128": "icons/128.png"
   },
   "author": "Jonathan Kay",
-  "homepage_url": "https://jonathankay.com/redditimgdt/",
+  "homepage_url": "https://jonathankay.com/redditimgbrowser/",
   "permissions": [
     "declarativeNetRequest"
   ],
   "host_permissions": [
     "*://i.redd.it/*",
-    "*://preview.redd.it/*"
+    "*://preview.redd.it/*",
+    "*://external-preview.redd.it/*"
   ],
   "declarative_net_request": {
     "rule_resources": [
