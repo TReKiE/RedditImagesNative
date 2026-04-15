@@ -5,7 +5,9 @@ A browser extension to restore native behaviour when loading image links on Redd
 ## Downloads
 [Chrome Web Store](https://chromewebstore.google.com/detail/imiakeaigofbcfdjajmgjfnohjlekndg)
 
-[Edge Add-ons Store](https://microsoftedge.microsoft.com/addons/detail/display-reddit-images-nat/gdpcmdicgbpnbmkamgcglcmdfhfjpllg)
+[Edge Add-ons Store](https://microsoftedge.microsoft.com/addons/detail/gdpcmdicgbpnbmkamgcglcmdfhfjpllg)
 
 ### About
-Made in July 2023 when Reddit modified how image links are handled as a way to force myself to learn how to use the declarativeNetRequest API in manifest v3.
+Made in July 2023 when Reddit modified how image links are handled as a way to learn how to use the declarativeNetRequest API in manifest v3.
+
+A [version for tumblr](https://github.com/TReKiE/tumblrImagesNative) is also available.
